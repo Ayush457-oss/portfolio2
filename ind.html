@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Include Tailwind CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.24/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for example purposes */
+        .bold-text {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6">This is my first Website</h1>
+
+        <img src="./assets/images/cat.png" alt="Cat" class="mb-6 w-1/2 md:w-1/4 mx-auto">
+
+        <hr class="my-6 border-gray-300">
+
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">
+                <a href="./public/birthday-invite.html" class="text-blue-500 hover:text-blue-700">MY BIRTHDAY PROJECT</a>
+            </h2>
+            <img src="./assets/images/birthday.png" alt="Birthday" class="w-full md:w-1/4 mx-auto">
+        </div>
+
+        <hr class="my-6 border-gray-300">
+
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">
+                <a href="./public/movie-ranking.html" class="text-blue-500 hover:text-blue-700">MY MOVIE RANKINGS</a>
+            </h2>
+            <img src="./assets/images/movie.png" alt="Movie" class="w-full md:w-1/4 mx-auto">
+        </div>
+
+        <hr class="my-6 border-gray-300">
+
+        <div class="flex flex-col items-center">
+            <a href="./public/about.html" class="text-blue-500 hover:text-blue-700 mb-2">About me</a>
+            <a href="./public/contact.html" class="text-blue-500 hover:text-blue-700">Contact me</a>
+        </div>
+
+        <!-- Optional: Add a button to demonstrate JavaScript -->
+        <div class="mt-6 text-center">
+            <button id="themeToggle" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none">Toggle Dark Mode</button>
+        </div>
+    </div>
+
+    <!-- JavaScript to toggle dark mode -->
+    <script>
+        const button = document.getElementById('themeToggle');
+        button.addEventListener('click', () => {
+            document.body.classList.toggle('bg-gray-900');
+            document.body.classList.toggle('text-gray-100');
+        });
+    </script>
+</body>
+</html>
